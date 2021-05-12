@@ -68,4 +68,4 @@ main()
 		await prisma.$disconnect();
 	});
 
-  // npx prisma db seed --preview-feature
+// npx prisma db seed --preview-feature

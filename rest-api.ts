@@ -101,6 +101,11 @@ app.get('/posts', async (req, res) => {
   res.json(posts)
 })
 
+app.get('/profiles', async (req, res) => {
+  const profiles = await prisma.profile.findMany()
+  res.json(profiles)
+})
+
 app.get('/user/:id/drafts', async (req, res) => {
   const { id } = req.params
 
